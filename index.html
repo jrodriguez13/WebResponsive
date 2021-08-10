@@ -13,7 +13,9 @@
     <title>Web de Prueba</title>
   </head>
   <body>
+    <!-- Cabecera -->
     <header>
+      <!-- Barra de Navegación -->
       <nav class="navbar-menu">
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
@@ -22,15 +24,16 @@
         <label class="logo"> DesignTI </label>
         <ul class="nav-options">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#nosotros">Servicios</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contactos">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="banner">
+      <!-- Sección Banner -->
+      <section class="banner" id="bann">
         <div class="banner-content">
           <img src="img/p1.jpg" alt="imagen-banner" />
           <div class="banner-text">
@@ -44,7 +47,8 @@
         </div>
       </section>
 
-      <section class="about">
+      <!-- Sección Servicios -->
+      <section class="about" id="nosotros">
         <div class="about-content">
           <h2>Nuestros trabajos</h2>
           <p>
@@ -82,13 +86,18 @@
         </div>
       </section>
 
-      <section class="testimonios">
+      <!-- Sección Clientes -->
+      <section class="testimonios" id="clientes">
         <div class="testimonios-content">
           <h2>Clientes</h2>
           <p>Nuestros clientes nos respaldan</p>
           <div class="testimonios-group">
             <div class="testimonios-card">
-              <img src="img/perfil1.jpg" alt="imagenperfil" class="img-perfil"/>
+              <img
+                src="img/perfil1.jpg"
+                alt="imagenperfil"
+                class="img-perfil"
+              />
               <h4>John Doe</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -98,7 +107,11 @@
               </p>
             </div>
             <div class="testimonios-card">
-              <img src="img/perfil2.jpg" alt="imagenperfil" class="img-perfil"/>
+              <img
+                src="img/perfil2.jpg"
+                alt="imagenperfil"
+                class="img-perfil"
+              />
               <h4>Laura Jones</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
@@ -107,7 +120,11 @@
               </p>
             </div>
             <div class="testimonios-card">
-              <img src="img/perfil3.jpg" alt="imagenperfil" class="img-perfil"/>
+              <img
+                src="img/perfil3.jpg"
+                alt="imagenperfil"
+                class="img-perfil"
+              />
               <h4>James O´Malley</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,7 +136,59 @@
           </div>
         </div>
       </section>
+
+      <!-- Sección Contacto -->
+      <section class="contacto" id="contactos">
+        <div class="contacto-content">
+          <h2>Contáctenos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="contacto-group">
+            <form action="" class="form-contact">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Nombres Completos"
+                  class="form-control"
+                />
+                <input
+                  type="text"
+                  placeholder="Apellidos Completos"
+                  class="form-control"
+                />
+                <input
+                  type="email"
+                  placeholder="Correo Electrónico"
+                  class="form-control"
+                />
+                <input type="text" placeholder="Celular" class="form-control" />
+              </div>
+              <textarea rows="5" class="form-control"></textarea>
+              <input type="submit" class="send-btn" />
+            </form>
+            <div class="contacto-img">
+              <img src="img/contacto.png" alt="imagencontacto" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social">
+          <label for="">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-google"></i></a>
+          </label>
+        </div>
+        <div class="copr">
+          <p>JR Designs &copy; 2021. Todos los Derechos Reservados.</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/c34f4d28dd.js"
       crossorigin="anonymous"
