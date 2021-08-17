@@ -69,7 +69,7 @@ a:hover {
   line-height: 50px;
   margin-right: 25px;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 
 section {
@@ -321,29 +321,32 @@ footer {
   padding: 0 10px;
 }
 
-.fa-facebook-square:hover {
+.fa-facebook:hover {
   transform: translateY(-3px) scale(1.05);
   transition: 0.2s;
   background-color: #3b5999;
+  color: #000000;
 }
 
-.fa-instagram-square:hover {
+.fa-instagram:hover {
   transform: translateY(-3px) scale(1.05);
   transition: 0.2s;
   background-color: #e4405f;
+  color: #000000;
 }
 
-.fa-twitter-square:hover {
+.fa-twitter:hover {
   transform: translateY(-3px) scale(1.05);
   transition: 0.2s;
   background-color: #55acee;
+  color: #000000;
 }
 
 .fa-google:hover {
   transform: translateY(-3px) scale(1.05);
   transition: 0.2s;
   background-color: #ffffff;
-  color: black;
+  color: #000000;
 }
 
 /* Área Responsive */
@@ -363,6 +366,7 @@ footer {
 
   .banner-content img {
     margin-top: 50px;
+    width: 100%;
   }
 
   .about,
@@ -455,6 +459,11 @@ footer {
     height: 55vh;
   }
 
+  .banner-content img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
   .banner-text h2 {
     font-size: 30px;
   }
